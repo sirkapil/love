@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>First and Last Love: Classified Images</title>
- <meta name="viewport" content="width=device-width; target-densityDpi=device-dpi; user-scalable=no" />
+ <meta name="viewport" content="width=device-width, initial-scale=0.5, target-densityDpi=device-dpi" />
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ff4500">
    <!-- Windows Phone -->
@@ -11,11 +11,13 @@
    <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ff4500">
   <link rel="icon" sizes="16x16 32x32 48x48 96x96 192x192" href="https://sirkapil.me/img/icon/icon.png">
+  <link rel="stylesheet" href="css/rotate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,600'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" media="screen and (orientation: portrait)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" media="screen and (orientation: portrait)">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <script src="https://cdn.sirkapil.me/session.js"></script>
   <script src="https://cdn.sirkapil.me/Cookies.js"></script>
   <script type="text/javascript">
@@ -57,10 +59,24 @@
   // create a cookie that expires after one hour
   Cookies.set('theme', 'clean', {path : '/'});
 
-  Cookies.set('language', 'en-IN', {expiry : new Date(2030, 1, 1)}, {path : '/'});
+  Cookies.set('language', 'en-IN', {expiry : new Date(2050, 1, 1)}, {path : '/'});
   </script>
   </head>
-<body onload="checkCookie()" text="gray" background="//cdn1.netlify.com/bg/img/du1.gif">
+<body id="container" onload="checkCookie()" text="gray" background="https://cdn1.netlify.com/bg/img/du1.gif">
+<section class="section">
+  <div id="warning-message" class="container" role="contentinfo">
+    <h1 class="title animated bounceInRight" align="left">
+    Sorry ;(
+  </h1>
+  <br />
+<h2 class="subtitle animated slideInUp" align="left"><br>This webpage is best viewed in landscape mode.<br />
+      Please turn on screen auto rotation & switch to landscape mode.
+
+    <br><br>
+    Still confused ? you can drop down a <a href ="https://cont.netlify.com" target="_blank">message here.</a>
+</h2>
+</div>
+</section>
   <article class="gallery">
   <a class="gallery-link" href="./images_files/06042018.png">
     <figure class="gallery-image">
@@ -88,7 +104,7 @@
   </a>
   <a class="gallery-link" href="./images_files/Holi2018-2.jpg">
     <figure class="gallery-image">
-      <img height="1600" src="./images_files/Holi2018-2.jpg" width="1400">
+      <img height="1600" src="./images_files/Holi2018-2.jpg" width="1600">
       <figcaption>Holi 2018</figcaption>
     </figure>
   </a>
@@ -101,7 +117,7 @@
   <a class="gallery-link" href="./images_files/Saree.jpg">
     <figure class="gallery-image">
       <img height="1400" src="./images_files/Saree.jpg" width="1200">
-      <figcaption>Saree (unknown place)</figcaption>
+      <figcaption>Saree</figcaption>
     </figure>
   </a>
   <a class="gallery-link" href="./images_files/06042018-1.png">
@@ -124,12 +140,14 @@
   </a>
 </article>
 <footer id="footer" role="contentinfo">
-  <div class="container">
-    <p class="copy animated slideInUp" rel="home" style="color:purple">"  I'll always miss you ... always !<br>You'll remain my first and last love , that's a promise.<br>No girl can replace you in my life. "</p>
-    <a class="copy animated bounceInRight" href="https://cont.netlify.com"><span style="color:black">~ Kapil Chaudhary</span></a>
-    <p class="copy" rel="home"> <span style="color:white">I Love You , Neha !</span></p>
+  <section class="section">
+    <div class="container" id="wrapper"><i>
+    <h3 class="subtitle animated bounceInRight" rel="home" style="color:purple">  I'll always miss you ... always !<br>You'll remain my first & last love , that's a promise.<br>No girl can replace you ever in my life. </h3></i>
+    <h3 class="subtitle animated bounceInRight"><span style="color:black">~ Kapil Chaudhary</span></h3>
+    <h3 rel="home"> <span style="color:white">I Love You , Neha !</span></h3>
     <hr />
   </div>
+  </section>
 </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
