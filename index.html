@@ -32,7 +32,7 @@
       var decodedCookie = decodeURIComponent(document.cookie);
       var ca = decodedCookie.split(';');
       for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
+          var c = ca[i]
           while (c.charAt(0) == ' ') {
               c = c.substring(1);
           }
@@ -61,7 +61,8 @@
   Cookies.set('language', 'en-IN', {expiry : new Date(2050, 1, 1)}, {path : '/'});
   </script>
   <script>
-    alert("Welcome Back !
+    alert("The webpage is best viewed in landscape mode. If you are using mobile browser then please turn on your screen rotation and switch to landscape mode.")
+  </script>
   </head>
 <body id="container" onload="checkCookie()" text="gray" background="https://cdn1.netlify.com/bg/img/du1.gif">
 
