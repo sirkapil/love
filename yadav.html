@@ -11,14 +11,6 @@
    <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ff4500">
   <link rel="icon" sizes="16x16 32x32 48x48 96x96 192x192" href="https://sirkapil.me/img/icon/icon.jpg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,600'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" media="screen and (orientation: landscape)">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" media="screen and (orientation: portrait)">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" media="screen and (orientation: landscape)">
-  <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript">
   function setCookie(cname,cvalue,exdays) {
       var d = new Date();
@@ -65,6 +57,29 @@
   </script>
   </head>
 <body id="container" onload="checkCookie()" text="gray" background="https://cdn1.netlify.com/bg/img/du1.gif">
+<noscript id="deferred-styles">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" media="screen and (orientation: landscape)" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" media="screen and (orientation: portrait)" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
 <audio loop autoplay>
   <source src="data/bg-music.ogg" type="audio/ogg">
   <source src="data/bg-music.mp3" type="audio/mpeg">
