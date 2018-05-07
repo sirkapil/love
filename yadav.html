@@ -11,52 +11,6 @@
    <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#ff4500">
   <link rel="icon" sizes="16x16 32x32 48x48 96x96 192x192" href="https://sirkapil.me/img/icon/icon.jpg">
-  
-  <script type="text/javascript">
-  function setCookie(cname,cvalue,exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*10000));
-      var expires = "expires=" + d.toGMTString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
-  function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i < ca.length; i++) {
-          var c = ca[i]
-          while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-          }
-      }
-      return "";
-  }
-
-  function checkCookie() {
-      var user=getCookie("username");
-      if (user != "") {
-          alert("Welcome Back ! " + user);
-      } else {
-         user = prompt("The files that you are trying to view are marked as classified or private by kapil chaudhary. Can you please enter your name to proceed ?");
-         if (user != "" && user != null) {
-             setCookie("username", user, 30);
-         }
-      }
-  }
-
-  // create a cookie that expires after one hour
-  Cookies.set('theme', 'clean', {path : '/'});
-
-  Cookies.set('language', 'en-IN', {expiry : new Date(2050, 1, 1)}, {path : '/'});
-  </script>
-  <script>
-    alert("The webpage contains an audio song to be played in background.")
-  
-  </script>
   </head>
 <body id="container" onload="checkCookie()" text="gray" background="https://cdn1.netlify.com/bg/img/du1.gif">
 <noscript id="deferred-styles">
