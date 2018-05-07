@@ -1,0 +1,1 @@
+pdf2htmlEX.exe --fit-width 1024 --embed CFIJO --process-outline 0 --dest-dir html --split-pages 0 C:\Users\kapil\Pictures\Screenshots\neha\1804.pdf
